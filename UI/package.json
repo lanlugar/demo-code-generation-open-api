@@ -1,0 +1,17 @@
+{
+  "name": "open-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate:network:spec": "openapi --input http://localhost:8080/v2/api-docs --output ./generated --client angular",
+    "generate:file:spec": "openapi --input ./spec.json --output ./generated --client angular"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "openapi-typescript-codegen": "^0.24.0"
+  }
+}
